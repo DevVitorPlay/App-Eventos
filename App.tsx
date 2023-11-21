@@ -1,13 +1,17 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { styles } from './styles';
+import {Home} from './src/screens/Home';
+import { StatusBar } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.nomeEvento}>Nome do evento</Text>
-      <Text>18 de novembro de 2023</Text>
-    </View>
+   <>
+   <StatusBar
+    barStyle='dark-content'
+    backgroundColor='transparent'
+    translucent
+   />
+   <Home/>
+   </>
   );
 }
 
